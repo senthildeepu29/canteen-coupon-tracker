@@ -1,0 +1,83 @@
+case study
+Scenario – “Campus Canteen Coupon Tracker”
+Your university canteen issues electronic meal coupons to students every morning.
+
+A coupon has a value in rupees (whole number — int).
+
+At most 100 coupons are issued per day.
+
+Throughout the day students redeem coupons at the counter.
+
+When a coupon is redeemed, the cashier types its value into the system.
+
+At closing time the manager wants a summary of the day:
+
+Total number of coupons redeemed.
+
+Total rupee value of all coupons redeemed.
+
+Highest‑value coupon redeemed (and its position in the list, i.e., first, second …).
+
+A category report based on coupon value:
+
+≤ 50 → “Small”
+
+51 – 100 → “Medium”
+
+> 100 → “Large”
+The program must print how many coupons fall in each category.
+
+Write a console application that satisfies the following:
+
+Input phase
+
+First read n, the number of coupons redeemed (1 ≤ n ≤ 100).
+
+Then read n coupon values (each a positive int) and store them in a single‑dimensional int array.
+
+Processing phase
+
+Use a suitable loop (for or while) to compute the required statistics.
+
+Use either an if/else if/else chain or a switch expression to classify each coupon value into “Small”, “Medium”, or “Large”.
+
+Output phase
+
+Display, with clear labels,
+
+(a) total coupons,
+
+(b) total value,
+
+(c) highest value and its 1‑based position in the input list,
+
+(d) counts for each category.
+
+Sample Input/Output
+
+Enter number of coupons: 7
+Enter coupon values, separated by spaces:
+40 65 120 50 90 200 35
+
+----- Daily Coupon Summary -----
+Total coupons redeemed  : 7
+Total value collected   : 600
+Highest coupon redeemed : 200 (coupon #6)
+
+Category breakdown
+Small  (≤50)   : 3
+Medium (51-100): 2
+Large  (>100)  : 2
+Notes / Constraints
+
+Use appropriate data types (int for counts and coupon values; string for prompts/output).
+
+Do not use collections other than a basic one‑dimensional array.
+
+Ensure your program works for edge cases:
+
+exactly one coupon;
+
+all coupons in the same category;
+
+highest value appears more than once (report the first position).
